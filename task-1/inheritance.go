@@ -24,7 +24,7 @@ func (h *Human) Talk() {
 func main() {
 
 	//Initialize the Action structure with the Human structure embedded in it
-	action := Action{Human{
+	action := &Action{Human{
 		age:    15,
 		height: 176,
 	}}
